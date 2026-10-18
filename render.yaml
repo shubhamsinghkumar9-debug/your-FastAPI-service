@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: fastapi-prometheus-logs
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /healthz
+    envVars:
+      - key: USER_EMAIL
+        value: shubhamsingh7307529@gmail.com
