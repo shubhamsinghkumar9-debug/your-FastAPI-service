@@ -13,7 +13,7 @@ from prometheus_client import Counter, generate_latest, CONTENT_TYPE_LATEST
 from starlette.middleware.base import BaseHTTPMiddleware
 
 START_TIME = time.monotonic()
-USER_EMAIL = os.getenv("USER_EMAIL", "shubhamsingh7307529@gmail.com")
+USER_EMAIL = "24f2007269@ds.study.iitm.ac.in"
 
 # A single live counter, incremented for every HTTP request, including /metrics.
 HTTP_REQUESTS = Counter(
